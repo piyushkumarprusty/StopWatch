@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView tvSplash , tvSubSplash ;
     Button btnget;
-    Animation atg;
+    Animation atg , btgone , btgtwo ;
     ImageView ivSplash;
 
     @Override
@@ -29,9 +29,15 @@ public class MainActivity extends AppCompatActivity {
 
         // Load Animation
         atg = AnimationUtils.loadAnimation(this,R.anim.atg);
+        btgone = AnimationUtils.loadAnimation(this,R.anim.btgone);
+        btgtwo = AnimationUtils.loadAnimation(this,R.anim.btgtwo);
 
         //passing animation
         ivSplash.startAnimation(atg);
+        tvSplash.startAnimation(btgone);
+        tvSubSplash.startAnimation(btgtwo);
+        ivSplash.startAnimation(btgtwo);
+        btnget.startAnimation(btgtwo);
 
 
     }
