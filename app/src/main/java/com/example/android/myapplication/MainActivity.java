@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -26,6 +27,12 @@ public class MainActivity extends AppCompatActivity {
         btnget = findViewById(R.id.btnget);
         ivSplash = findViewById(R.id.ivSplash);
 
-        // Animation
+        // Load Animation
+        atg = AnimationUtils.loadAnimation(this,R.anim.atg);
+
+        //passing animation
+        ivSplash.startAnimation(atg);
+
+
     }
 }
