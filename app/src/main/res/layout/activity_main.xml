@@ -21,9 +21,10 @@
         android:id="@+id/tvSplash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/montserrat"
         android:text="@string/work_crazy"
         android:textColor="#FFF"
         android:textSize="24sp"
@@ -35,18 +36,19 @@
         android:id="@+id/tvSubSplash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:text="I am crazy to my \n Goal"
-        android:textColor="#A3A2AD"
-        android:textAlignment="center"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/montserrat"
         android:lineSpacingExtra="8dp"
+        android:text="Go  and Run \n Take Rest"
+        android:textAlignment="center"
 
+        android:textColor="#A3A2AD"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvSplash" />
 
     <Button
@@ -57,15 +59,15 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="40dp"
         android:background="@drawable/bgbtngreen"
+        android:fontFamily="@font/montserrat"
         android:text="Get Started"
-        android:textSize="20sp"
         android:textAllCaps="false"
         android:textColor="#FFF"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-  />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
