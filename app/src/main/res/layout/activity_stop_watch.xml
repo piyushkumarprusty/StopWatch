@@ -34,6 +34,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Chronometer
+        android:id="@+id/timerHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="12dp"
+        android:textColor="#FFF"
+        android:textSize="65sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnget"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icanchor" />
+
     <Button
         android:id="@+id/btnget"
         android:layout_width="280dp"
