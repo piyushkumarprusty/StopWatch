@@ -2,7 +2,9 @@ package com.example.android.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -38,6 +40,15 @@ public class MainActivity extends AppCompatActivity {
         tvSubSplash.startAnimation(btgtwo);
         ivSplash.startAnimation(btgtwo);
         btnget.startAnimation(btgtwo);
+
+        //passing event
+        btnget.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(MainActivity.this , StopWatch.class);
+                startActivity(a);
+            }
+        });
 
 
     }
