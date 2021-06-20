@@ -11,7 +11,7 @@ import android.widget.ImageView;
 
 public class StopWatch extends AppCompatActivity {
 
-    Button btnstart;
+    Button btnstart , btnstop;
     ImageView icanchor;
     Animation roundingalone;
 
@@ -21,7 +21,11 @@ public class StopWatch extends AppCompatActivity {
         setContentView(R.layout.activity_stop_watch);
 
         btnstart =findViewById(R.id.btnget);
+        btnstop = findViewById(R.id.btnstop);
         icanchor = findViewById(R.id.icanchor);
+
+        //optional animation
+        btnstop.setAlpha(0);
 
         //Load animations
         roundingalone = AnimationUtils.loadAnimation(this,R.anim.roundingalone);
@@ -31,6 +35,8 @@ public class StopWatch extends AppCompatActivity {
             public void onClick(View v) {
                 //passing animation
                 icanchor.startAnimation(roundingalone);
+                btnstop.animate().alpha(1).setDuration(3000).start();
+                btnstart.animate().alpha(0).setDuration(5000).start();
             }
         });
 
