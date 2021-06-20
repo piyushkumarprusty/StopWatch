@@ -10,38 +10,29 @@
 
     <ImageView
         android:id="@+id/bgcircle"
-        android:layout_width="292dp"
-        android:layout_height="291dp"
+        android:layout_width="276dp"
+        android:layout_height="247dp"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="55dp"
-        android:scaleType="centerCrop"
+        android:layout_marginTop="56dp"
         android:src="@drawable/bgcircle"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <ImageView
         android:id="@+id/icanchor"
         android:layout_width="358dp"
         android:layout_height="357dp"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginTop="0dp"
+        android:layout_marginEnd="8dp"
         android:scaleType="centerCrop"
         android:src="@drawable/icanchor"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
-
-
-
-
-
-
 
     <Button
         android:id="@+id/btnget"
@@ -49,7 +40,7 @@
         android:layout_height="55dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="60dp"
         android:background="@drawable/bgbtngreen"
         android:fontFamily="@font/montserrat"
         android:text="Get Started"
